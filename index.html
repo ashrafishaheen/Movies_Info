@@ -3,37 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>MovieInfo</title>
-    <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css">
-    <link rel= "stylesheet" href="css/style.css">
-  </head>
-  <body>
-<nav class="navbar navbar-default">
-  <div class="container">
-   <!-- Brand and toggle get grouped for better mobile display -->
-   <div class="navbar-header">
-     <a class="navbar-brand" href="index.html">MovieInfo</a>
-   </div>
- </div>
- </nav>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
- <div class="container">
-  <div class="jumbotron">
-    <h3 class="text-center">Search For Any Movie</h3>
-    <form id="searchForm">
-      <input type "text" class="form-control" id="searchText" placeholder="Search Movies">
-    </form>
-  </div>
-  </div>
-  <div clas="container">
-    <div id="movies" class="row"></div>
-  </div>
+    <link rel= "stylesheet" href="css/style.css">
+    <!--bootstrap here-->
+    <link href = "stylesheet" href="css/bootstrap.css">
+    <link href = "stylesheet" href="css/bootstrap.min.css">
+    <!-- Angular links here-->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body ng-app="myApp">
+    
+    <div class ="container">
+      <div class="ng-view"></div>
+    </div>
+
 
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="js/main.js"></script>
+
 
        </body>
 </html>
