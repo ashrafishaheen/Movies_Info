@@ -20,19 +20,42 @@
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">MovieInfo</a>
+
+      <a class="navbar-brand heading" href="#">MovieInfo</a>
     </div>
     <form class="navbar-form">
       <div class="form-group">
-        <input type="text" class="form-control" id= "year" ng-model ="movieyear" placeholder="Search">
+        <input type="text" class="form-control input_box" id= "year" ng-model ="movieyear" placeholder="Search movie...">
       </div>
-      <button type="submit" class="btn btn-default" ng-click ="gotoMovieyear(movieyear)">Submit</button>
+      <button type="submit" class="btn btn-default click" ng-click ="gotoMovieyear(movieyear)">Submit</button>
     </form>
   </div>
 </nav>
     <div class ="container">
       <div class="ng-view"></div>
     </div>
+    <!--Footer Section starts from here-->
+ <div class="container-fluid footer" id="contact_us">
+<div class="container">
+<div class="col-xs-6">
+<h3 style="color:white;">Contact details</h3>
+<h4 style="color:white;">Address:</h4><p style="color:white;">MGG,Punjab India</p>
+<a href="Ashrafi.shaikh@gmail.com"style="font-size:12px; color:white;">&copy; Ashrafi.shaikh@gmail.com </a>
+</div>
+<div class="col-xs-6">
+<h3 style="color:white;">Quick Links</h3>
+<ul class="footer_cont">
+<li><a href="#home_page" class="home_page">&raquo; Home</a></li>
+<li><a href="#contact_us" class="home_page">&raquo; Contact US</a></li>
+<li><a href="#famous_courses" class="home_page">&raquo; Services</a></li>
+<li><a href="#famous_courses" class="home_page">&raquo; Courses</a></li>
+</ul>
+</div>
+</div><!--End of conatiner-->
+</div>
+
+
+ <!--Footer Section ends here-->
 
 
   <script

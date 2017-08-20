@@ -1,10 +1,12 @@
+<a href="#"><button class="btn btn-danger go">Go Back</button></a>
 <div class="row">
   <div class= "col-md-12">
     <h1>{{movie.Title}}</h1>
-    <p class="des">Description:{{movie.Description}}</p>
-    <p class="des"><b>Genre:</b>{{movie.Genre}}</p>
-    <p ng-hide = "movie.Runtime ==0">Runtime:{{movie.Runtime}}</p>
-    <a href="{{movie.TrailerLink}}" target="_blank"><img class="post" ng-src="{{movie.PosterPath}}" alt=""></a>
+    <p class="des"><strong>Description:</strong> {{movie.Description}}</p>
+    <p class="des"><strong>Genre:</strong> {{movie.Genre}}</p>
+    <p class="des" ng-hide = "movie.Runtime ==0"><strong> Runtime:</strong> {{movie.Runtime}}</p>
+    <img class="post" ng-src="{{movie.PosterPath}}" alt=""><br>
+    <a href="{{movie.TrailerLink}}" target="_blank"><button class="btn btn-primary trailer">Trailer</button></a>
 
   </div>
 </div>
