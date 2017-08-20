@@ -17,7 +17,7 @@ $scope.gotoMovie = function(id){
   $location.path("/id/" + id);
 };
 //redirect to page
-$scope.gotoMovieyear =function(year){
+$scope.gotoMovieyear = function(year){
   $location.path("/year/" + year);
 };
 });
